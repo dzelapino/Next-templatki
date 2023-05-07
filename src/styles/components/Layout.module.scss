@@ -1,0 +1,19 @@
+.Layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .LayoutChildren {
+    min-height: 85vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

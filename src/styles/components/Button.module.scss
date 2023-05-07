@@ -1,0 +1,10 @@
+.Button {
+    background-color: white;
+    font-size: large;
+    padding: 0.2rem;
+    border-radius: 0.7rem;
+}
+.Button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}

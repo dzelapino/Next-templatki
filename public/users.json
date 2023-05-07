@@ -1,0 +1,25 @@
+[
+    {
+      "page": 1,
+      "userList": [
+        { "id": 1, "username": "Ajra" },
+        { "id": 2, "username": "Posokowiec" },
+        { "id": 3, "username": "Bajra" },
+        { "id": 4, "username": "Psosok" },
+        { "id": 5, "username": "Boogie" }
+      ]
+    },
+    {
+      "page": 2,
+      "userList": [
+        { "id": 6, "username": "Chase" },
+        { "id": 7, "username": "Marshall" },
+        { "id": 8, "username": "Sky" },
+        { "id": 9, "username": "Rocky" },
+        { "id": 10, "username": "Rubble" },
+        { "id": 11, "username": "Zuma" },
+        { "id": 12, "username": "Everest" },
+        { "id": 13, "username": "Tracker" }
+      ]
+    }
+]

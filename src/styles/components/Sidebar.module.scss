@@ -1,0 +1,46 @@
+.Navbar {
+  animation-duration: 2.5s;
+  animation-name: navRender;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  background-color: rgba(110, 110, 110, 0.75);
+  border: none;
+  border-radius: 20px;
+  font-size: larger;
+  padding: 0 4rem;
+  font-weight: bolder;
+  overflow: hidden;
+  color: white;
+  z-index: 5;
+  border: 2.5px solid black;
+  .LeftSide, .RightSide {
+    font-size: larger;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    a:hover, .SidebarButton:hover {
+      cursor: pointer;
+      color: cyan;
+      transform: scale(1.05);
+    }
+  }
+}
+
+@keyframes navRender {
+  from {
+    width: 20vw;
+  }
+
+  to {
+    width: 80vw;
+  }
+}
+
