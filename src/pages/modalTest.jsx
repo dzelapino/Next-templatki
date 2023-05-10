@@ -10,11 +10,17 @@ const ModalTest = () => {
     setModalOpen(true);
   };
 
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
   return (
     <div className={styles.ModalTest}>
       <div className={styles.ModalAndTileWrapper}>
         <Tile data={{ text: "Testing modal" }} />
-        {modalOpen ? <Modal modalText="Redirect to home" /> : null}
+        {modalOpen ? 
+        <Modal modalText="Modal is working" buttonFunction={closeModal} buttonText="Close Modal"/>
+        : null}
       </div>
       <Button buttonFunction={openModal} buttonText="Open Modal" />
     </div>
