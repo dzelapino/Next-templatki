@@ -17,7 +17,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className={styles.RightSide} tabIndex="1">
+      <div className={styles.RightSide}>
         <div
           className={styles.SidebarButton}
           onClick={() => setSidebarOn(true)}
