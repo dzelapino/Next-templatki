@@ -1,13 +1,15 @@
 .Navbar {
-  animation-duration: 2.5s;
-  animation-name: navRender;
+  animation-duration: 1s;
+  animation-name: Render;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  text-align: center;
   align-items: center;
-  width: 80vw;
-  background-color: rgba(110, 110, 110, 0.75);
+  min-width: 280px;
+  width: 80%;
+  background-color: rgba(70, 70, 70, 0.75);
   border: none;
   border-radius: 20px;
   font-size: larger;
@@ -17,7 +19,8 @@
   color: white;
   z-index: 5;
   border: 2.5px solid black;
-  .LeftSide, .RightSide {
+  .LeftSide,
+  .RightSide {
     font-size: larger;
     display: flex;
     flex-wrap: wrap;
@@ -25,8 +28,11 @@
     a {
       text-decoration: none;
       color: white;
+      animation-duration: 2.5s;
+      animation-name: LinkRender;
     }
-    a:hover, .SidebarButton:hover {
+    a:hover,
+    .SidebarButton:hover {
       cursor: pointer;
       color: cyan;
       transform: scale(1.05);
@@ -34,13 +40,22 @@
   }
 }
 
-@keyframes navRender {
+@keyframes Render {
   from {
-    width: 20vw;
+    width: 40%;
   }
 
   to {
-    width: 80vw;
+    width: 80%;
   }
 }
 
+@keyframes LinkRender {
+  from {
+    color: transparent;
+  }
+
+  to {
+    color: white;
+  }
+}
