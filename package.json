@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@shopify/react-web-worker": "^5.0.13",
     "eslint": "8.39.0",
     "eslint-config-next": "13.4.0",
     "next": "13.4.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "^1.62.1"
+    "sass": "^1.62.1",
+    "web-worker": "^1.2.0"
   }
 }
