@@ -6,10 +6,10 @@ import { useState } from "react";
 import Worker from "web-worker";
 import TwoButtonModal from "@/components/twoButtonModal";
 
+let worker;
+
 const WorkerTest = () => {
   const [modalOpen, setModalOpen] = useState(false);
-
-  let worker;
 
   const startRedirecting = async () => {
     if (worker === undefined) {
@@ -25,14 +25,14 @@ const WorkerTest = () => {
     }
     console.log("posting message")
     worker.postMessage("Start");
-    // setModalOpen(true);
+    setModalOpen(true);
   };
 
   const stopRedirecting = () => {
       worker.terminate();
       console.log("zabilem workera")
     worker = undefined;
-    // setModalOpen(false)
+    setModalOpen(false)
   };
 
   const redirectNow = () => {
@@ -44,7 +44,7 @@ const WorkerTest = () => {
 
   return (
     <div className={styles.WorkerTest}>
-      {/* {modalOpen ? (
+      {modalOpen ? (
         <TwoButtonModal
           modalText={"You will be redirected in 5 seconds."}
           mainButton={"left"}
@@ -53,18 +53,10 @@ const WorkerTest = () => {
           rightButtonText={"Redirect now"}
           rightButtonFunction={redirectNow}
         />
-      ) : null} */}
+      ) : null}
       <Button
         buttonFunction={startRedirecting}
         buttonText="Start redirecting"
-      />
-      <Button
-        buttonFunction={stopRedirecting}
-        buttonText="Stop redirecting"
-      />
-      <Button
-        buttonFunction={redirectNow}
-        buttonText="Redirect now"
       />
     </div>
   );
